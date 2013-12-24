@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e28ada01-7ccd-4afb-8968-d4ec7a8e2105" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppEngine Part/helloworld.py" afterPath="$PROJECT_DIR$/AppEngine Part/helloworld.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="XbmcOroro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +31,7 @@
       <file leaf-file-name="helloworld.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AppEngine Part/helloworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="34" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.27367204" vertical-offset="273" max-vertical-offset="1496">
+            <state line="45" column="9" selection-start="1612" selection-end="1612" vertical-scroll-proportion="-0.13333334" vertical-offset="877" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
@@ -397,12 +396,14 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/AppEngine Part/helloworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="34" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.27367204" vertical-offset="273" max-vertical-offset="1496">
+        <state line="45" column="9" selection-start="1612" selection-end="1612" vertical-scroll-proportion="-0.13333334" vertical-offset="877" max-vertical-offset="1717">
           <folding />
         </state>
       </provider>
