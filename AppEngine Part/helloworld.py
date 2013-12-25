@@ -8,7 +8,7 @@ base_url = 'http://ororo.tv'
 class OroroParser:
     @staticmethod
     def get_html(url):
-        conn = urllib2.urlopen(urllib2.Request(url + urllib.urlencode({})))
+        conn = urllib2.urlopen(url)
         html = conn.read()
         conn.close()
         return html
@@ -30,7 +30,7 @@ class OroroParser:
     def get_episode(html_source):
         webm = re.compile("<source src='(.+?)' type='video/webm'", re.IGNORECASE).findall(html_source.decode("utf-8"))[0]
         mp4 = re.compile("<source src='(.+?)' type='video/mp4'>", re.IGNORECASE).findall(html_source.decode("utf-8"))[0]
-        sub = re.compile("label='.+?' src='(.+?)' srclang='.+?'>", re.IGNORECASE).findall(html_source.decode("utf-8"))[0]
+        sub = base_url + re.compile("label='.+?' src='(.+?)' srclang='.+?'>", re.IGNORECASE).findall(html_source.decode("utf-8"))[0]
         series = {'webm': webm, 'mp4': mp4, 'sub': sub}
 
         return series
@@ -58,7 +58,7 @@ class OroroParser:
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-        self.redirect("http://www.google.com/analytics")
+        self.response.out.write("Hello")
 
 
 class CatalogPage(webapp2.RequestHandler):
